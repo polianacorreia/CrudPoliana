@@ -26,4 +26,26 @@ public class Aluno implements Identificavel {
 		this.matricula = matricula;
 	}
 	
+	
+	public Aluno() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Aluno(Long id, String nome, String matricula) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.matricula = matricula;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Aluno [id=" + id + ", nome=" + nome + ", matricula=" + matricula + "]";
+	}
+	
+	
+	
 }

@@ -19,6 +19,5 @@ public class Disciplina implements Identificavel {
 		this.nome = nome;
 	}
 	
-	
 }
 

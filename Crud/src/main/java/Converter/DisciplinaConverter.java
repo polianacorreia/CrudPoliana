@@ -1,11 +1,12 @@
 package Converter;
 
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 import javax.inject.Inject;
 
-import DAO.AlunoDAO;
 import DAO.DisciplinaDAO;
-import Entidades.Aluno;
 import Entidades.Disciplina;
 import Entidades.Identificavel;
 
@@ -14,7 +15,7 @@ public class DisciplinaConverter implements Converter {
 	
 	@Inject
 	private DisciplinaDAO disciplinaDAO;
-	
+
 	@Override
 	public Object getAsObject(FacesContext arg0, UIComponent arg1, String id) {
 		return disciplinaDAO.getByID(Long.parseLong(id));
@@ -24,5 +25,6 @@ public class DisciplinaConverter implements Converter {
 	public String getAsString(FacesContext arg0, UIComponent arg1, Object entidade) {
 		return ((Identificavel)entidade).getId().toString();
 	}
+
 
 }

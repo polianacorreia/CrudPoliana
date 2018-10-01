@@ -1,9 +1,12 @@
 package Entidades;
 
-public class Turma implements Identificavel{
+import java.util.ArrayList;
+
+public class Turma implements Identificavel {
 	
 	private Long id;
 	private String nome;
+	private ArrayList<Aluno> alunos;
 	
 	
 	public Long getId() {

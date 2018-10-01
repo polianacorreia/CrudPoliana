@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 import Entidades.Identificavel;
+import Service.Service;
 
 public abstract class GenericBean<E extends Identificavel> implements Serializable{
 
