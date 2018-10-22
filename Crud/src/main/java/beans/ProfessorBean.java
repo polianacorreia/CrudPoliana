@@ -4,11 +4,15 @@ import java.io.Serializable;
 import java.util.Collection;
 
 import javax.annotation.PostConstruct;
+import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import Entidades.Professor;
 import Service.ProfessorService;
 
+@ViewScoped
+@Named
 public class ProfessorBean implements Serializable {
 
 	/**

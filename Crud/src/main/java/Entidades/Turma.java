@@ -16,7 +16,6 @@ public class Turma implements Identificavel {
 	@SequenceGenerator(name = "turma_seq")
 	private Long id;
 	private String nome;
-	private ArrayList<Aluno> alunos;
 	
 	
 	public Long getId() {
@@ -31,5 +30,24 @@ public class Turma implements Identificavel {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	public Turma(Long id, String nome) {
+		super();
+		this.id = id;
+		this.nome = nome;
+	}
+	
+	public Turma() {
+		super();
+	}
+	
+	@Override
+	public String toString() {
+		return "Turma [id=" + id + ", nome=" + nome + "]";
+	}
+	
+	
+	
+	
 
 }

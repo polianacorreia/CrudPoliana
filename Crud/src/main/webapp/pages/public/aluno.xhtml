@@ -19,12 +19,12 @@
 
 			<h:outputLabel value="Nome:" for="nomeAlunoField" />
 			<h:inputText id="nomeAlunoField" label="nome"
-				value="#{alunoBean.aluno.nome}" />
+				value="#{alunoBean.aluno.nome}" style="width:350px" />
 
 			<h:outputLabel value="Matricula:"
 				for="matriculaAlunoField" />
 			<h:inputText id="matriculaAlunoField" label="matriculas"
-				value="#{alunoBean.aluno.matricula}" />
+				value="#{alunoBean.aluno.matricula}" style="width:350px" />
 
 			<h:commandButton value="Cadastrar" action="#{alunoBean.save()}" />
 		</h:panelGrid>
