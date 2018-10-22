@@ -1,7 +1,17 @@
 package Entidades;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
 public class Professor implements Identificavel {
 	
+	@Id
+	@GeneratedValue(generator = "professor_seq", strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "professor_seq")
 	private Long id;
 	private String nome;
 	private String cpf;
